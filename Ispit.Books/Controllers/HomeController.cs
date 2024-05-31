@@ -7,7 +7,7 @@ using System.Diagnostics;
 
 namespace Ispit.Books.Controllers
 {
-    [Authorize]
+    [Authorize(Roles = "Admin")]
     public class HomeController : Controller
     {
         private readonly IBooksService _booksService;
